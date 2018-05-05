@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lowest Common JSONomator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="col-sm-12">
+    <div class="col-sm-12">  
+        <h1>Lowest Common JSONomator</h1>
+        <div>Have you ever wanted to extract a type from a complext json object, each character in a
+            pattern represents 1 depth of the json struct. A pattern is made of '*' and 'm'.
+            'm' will try to merge the depth while * will leave it as is. You can't merge types that 
+            are different from one another.  
+        </div>
+    
+        Pattern: 
+        <input class="col-sm-12" type="text" id="pattern" pattern="[\*m]*" oninput="onPatternChanged(this)"><br>
+        </input:><textarea class="col-sm-6"          id="input"  cols="40" rows="20" oninput="changed()">input json</textarea>
+        <textarea class="col-sm-6" readonly id="output" cols="40" rows="10">output json</textarea>  
+        <h5 class="col-sm-6" class="text-danger">Errors:</h5>
+        <textarea class="col-sm-6" readonly id="error"   rows="8"></textarea>  
+    </div>
+    <div class="col-sm-12">
+        <button class="col-sm-2" type="button" class="btn" onclick="loadExample(0)">Example1</button>
+        <button class="col-sm-2" type="button" class="btn" onclick="loadExample(1)">Example2</button>
+        <button class="col-sm-2" type="button" class="btn" onclick="loadExample(2)">Example3</button>
+        <button class="col-sm-2" type="button" class="btn" onclick="loadExample(3)">Example4</button>
+        <button class="col-sm-2" type="button" class="btn" onclick="loadExample(4)">Example5</button>
+        <button class="col-sm-2" type="button" class="btn" onclick="loadExample(5)">Example6</button>
+
+    </div>
+    
+
+    <script src="main.js"></script>
+
+</body>
+</html>
