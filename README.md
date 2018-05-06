@@ -2,6 +2,6 @@
 
 Paste a json payload.
 
-Use the pattern to merge similar fields to create simple structs.
+Use the pattern to merge similar fields to create a lowest common json structure.
 
-Only object fields or array items for the same type can be merged.
+Only object fields or array items of the same type can be merged.

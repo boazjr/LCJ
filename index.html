@@ -10,10 +10,9 @@
 <body class="col-sm-12">
     <div class="col-sm-12">  
         <h1>Lowest Common JSONomator</h1>
-        <div>Have you ever wanted to extract a type from a complext json object, each character in a
-            pattern represents 1 depth of the json struct. A pattern is made of '*' and 'm'.
-            'm' will try to merge the depth while * will leave it as is. You can't merge types that 
-            are different from one another.  
+        <div>A pattern is made of '*' and 'm'.
+            'm' will try to merge the common fields while '*'' will leave them as is. You can only merge fields 
+            or arrays of the same type.  
         </div>
     
         Pattern: 
